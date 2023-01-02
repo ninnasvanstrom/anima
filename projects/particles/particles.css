@@ -1,0 +1,215 @@
+
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+    padding: 20px;
+
+}
+
+.firefly {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  background-color: rgb(255, 255, 252);
+  box-shadow:
+  0 0 20px 8px #fff,  /* inner white */
+  0 0 50px 10px rgb(255, 234, 0), /* middle magenta */
+  0 0 90px 13px rgb(251, 255, 200); /* outer cyan */
+}
+
+
+
+.close-button-wrapper {
+  position: fixed;
+  right: 20px;
+  z-index: 10000;
+
+}
+
+.close-button {
+  position: relative;
+}
+
+.close-button img {
+  width: 80px;
+}
+
+.fa-xmark {
+  font-size: 35px; 
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  position: absolute;
+  color: black;
+  left: 37%;
+  top: 28%;
+}
+
+.fa-xmark:hover {
+  transform: rotate(180deg);
+}
+
+
+
+.active {
+  font-weight: 500 !important;
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: -290px;
+  left: -80px;
+  transition: bottom 0.5s ease;
+}
+
+footer:hover{
+  bottom: -220px;
+  
+}
+
+footer:hover .footer-circle {
+  scale: 1.1;
+  
+}
+
+.footer-circle {
+  width: 500px;
+  transform: rotate(-30deg);
+  position: relative;
+  transition: scale 0.5s ease;
+}
+
+.footer-circle:hover{
+  scale: 1.1;
+}
+
+h1 {
+  position: absolute;
+  bottom: 380px;
+  left: 120px;
+  font-family: serif;
+  font-size: 40px;
+  font-weight: 400;
+  cursor: pointer;
+  z-index: 1000;
+  color: black;
+}
+
+h2 {
+  font-family: sans-serif;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  position: absolute;
+  bottom: 310px;
+  left: 120px;
+  max-width: 300px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  bottom: 260px;
+  left: 120px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+
+
+
+
+.canvas {
+    height: 100vh;
+    width: 100vw;
+}
+
+.rotateSquare {
+    animation: rotation 2s infinite linear;
+}
+
+.wobbleCircle {
+    animation: wobble 0.5s infinite linear;
+}
+
+.fadeItem {
+    animation: fade 1s ease-in-out;
+}
+
+.fadeItemTwo {
+    animation: fadeTwo 1s ease-in-out;
+}
+
+.blinkLine{
+  animation: blink 0.5s linear;
+}
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes wobble {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+}
+
+@keyframes fade {
+    from {
+      transform: scale(2);
+    }
+    to {
+      transform: scale(0);
+    }
+}
+
+@keyframes fadeTwo {
+    from {
+      opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Orbitron&family=Poppins:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&family=Varela+Round&display=swap');
+
+@font-face {
+    font-family: 'LilSister';
+    src: URL('./fonts/Lilsister-3opZ.ttf') format('truetype');
+  }
+
+/* Variables */
+:root {
+    --blow-bubbles-width: 62px;
+    --pop-bubbles-width: 44.5px;
+    --play-bubbles-width: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: -320px;
+    left: -80px;
+    transition: bottom 0.5s ease;
+  }
+  
+  footer:hover{
+    bottom: -240px;
+    
+  }
+  
+  footer:hover .footer-circle {
+    scale: 1.1;
+    
+  }
+  
+  .footer-circle {
+    width: 500px;
+    transform: rotate(-30deg);
+    position: relative;
+    transition: scale 0.5s ease;
+  }
+  
+  .footer-circle:hover{
+    scale: 1.1;
+  }
+  
+  h1 {
+    position: absolute;
+    bottom: 380px;
+    left: 120px;
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 1000;
+    color: black;
+  }
+  
+  h2 {
+    font-family: sans-serif;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: 330px;
+    left: 120px;
+    max-width: 300px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    position: absolute;
+    bottom: 270px;
+    left: 120px;
+  }
+  
+  h3 {
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+
+.active {
+    font-weight: 500 !important;
+    text-decoration: underline;
+}
+
+
+
+.close-button-wrapper {
+    position: fixed;
+    right: 20px;
+    z-index: 10000;
+  
+  }
+  
+  .close-button {
+    position: relative;
+  }
+  
+  .close-button img {
+    width: 80px;
+  }
+  
+  .fa-xmark {
+    font-size: 35px; 
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    position: absolute;
+    color: black;
+    left: 37%;
+    top: 28%;
+  }
+  
+  .fa-xmark:hover {
+    transform: rotate(180deg);
+  }
+
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: wobble 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: transform 1s linear;
+}
+
+.circle-test {
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 100px;
+    top: 100px;
+}
+
+.circle-test2 {
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 300px;
+    top: 300px;
+}
+
+
+.grid {
+    height: 100vh;
+}
+
+.circle-grow {
+    animation: wobbleGrow 1s;
+    transition: transform 0.3s linear;
+}
+
+
+@keyframes wobble{
+    from{
+        transform: scale(1);
+    }
+     to {
+        transform: scale(1.2);
+     }
+}
+
+

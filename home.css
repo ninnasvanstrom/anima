@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Hahmlet:wght@200;300;400&family=Lora:wght@400;500&family=Lustria&family=Nanum+Myeongjo:wght@400;700&family=Orbitron&family=Poppins:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #FFFDF8;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+ }
+
+.circle {
+    width: 200px;
+    animation: rotation 15s infinite linear;
+
+}
+
+
+
+.logo h2 {
+    font-weight: 400;
+    font-size: 35px;
+    position: absolute;
+    top: 420px;
+    left: 75px;
+    font-family: 'Lustria', sans-serif;
+    text-shadow: 1px 1px 3px rgb(155, 155, 155);
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: -320px;
+    left: 50%;
+    transform: translate(-55%);
+}
+
+.logo {
+    position: relative;
+}
+
+
+
+.logo p {
+    text-align: center;
+    font-family: 'Lustria', sans-serif;
+    margin-top: 230px;
+    font-size: 15px;
+    position: absolute;
+    top: 230px;
+    left: -10px;
+    min-width: 300px;
+    text-shadow: 1px 1px 3px rgb(155, 155, 155);
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lustria', sans-serif;
+    margin-top: 250px;
+    font-size: 25px;
+    
+}
+
+.projects {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 200px;
+}
+
+.project {
+    padding: 50px;
+    cursor: pointer;
+}
+
+.project h2 {
+    font-weight: 400;
+    font-size: 40px;
+    font-family: 'Lustria', sans-serif;
+    text-shadow: 1px 1px 3px rgb(222, 222, 222);
+    margin: 50px 0 20px 10px;
+}
+
+img {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: scale 0.2s ease-in-out;
+}
+
+img:hover {
+    scale: 1.02;
+}
+
+footer {
+}
+
+footer p {
+    font-family: 'Lustria', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* span {
+    font-size: 30px;
+} */
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes rotationTwo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+}

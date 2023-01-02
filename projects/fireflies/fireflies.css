@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Lora:wght@400;500&family=Nanum+Myeongjo:wght@400;700&family=Orbitron&family=Poppins:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.firefly {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    background-color: rgb(255, 255, 252);
+    box-shadow:
+    0 0 20px 8px #fff,  /* inner white */
+    0 0 50px 10px rgb(255, 234, 0), /* middle magenta */
+    0 0 90px 13px rgb(251, 255, 200); /* outer cyan */
+}
+
+body {
+    background-color: rgb(8, 6, 20);
+    padding: 20px;
+}
+
+  
+  .close-button-wrapper {
+    position: fixed;
+    right: 20px;
+    z-index: 10000;
+  
+  }
+  
+  .close-button {
+    position: relative;
+  }
+  
+  .close-button img {
+    width: 80px;
+  }
+  
+  .fa-xmark {
+    font-size: 35px; 
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    position: absolute;
+    color: black;
+    left: 37%;
+    top: 28%;
+  }
+  
+  .fa-xmark:hover {
+    transform: rotate(180deg);
+  }
+  
+
+  footer {
+    position: fixed;
+    bottom: -320px;
+    left: -80px;
+    transition: bottom 0.5s ease;
+    z-index: 1000;
+  }
+  
+  footer:hover{
+    bottom: -240px;
+    
+  }
+  
+  footer:hover .footer-circle {
+    scale: 1.1;
+    
+  }
+  
+  .footer-circle {
+    width: 500px;
+    transform: rotate(-30deg);
+    position: relative;
+    transition: scale 0.5s ease;
+  }
+  
+  .footer-circle:hover{
+    scale: 1.1;
+  }
+  
+  h1 {
+    position: absolute;
+    bottom: 380px;
+    left: 120px;
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 1000;
+    color: black;
+  }
+  
+  h2 {
+    font-family: sans-serif;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    bottom: 330px;
+    left: 120px;
+    max-width: 300px;
+  }
+  
+ h3 {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 270px;
+    left: 120px;
+  }
